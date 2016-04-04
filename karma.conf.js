@@ -24,15 +24,16 @@ module.exports = function(config) {
         ],
         
         proxies: {
-            "/jspm_packages": "/base/jspm_packages"
+            "/jspm_packages": "/base/jspm_packages",
+            "/app": "/base/app"
         },
 
         jspm: {
             serveFiles: [
-                'app/*.js'
+                'app/*.ts'
             ],
             loadFiles: [
-                'app/*.spec.js'
+                'app/*.spec.ts'
             ],
             stripExtension: false
         },
@@ -79,7 +80,7 @@ module.exports = function(config) {
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits
-        singleRun: false,
+        singleRun: true,
 
         // Concurrency level
         // how many browser should be started simultaneous
