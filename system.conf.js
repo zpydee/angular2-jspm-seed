@@ -1,6 +1,6 @@
 System.config({
     baseURL: "/",
-    defaultJSExtensions: false,
+    defaultJSExtensions: true,
     transpiler: "typescript",
     babelOptions: {
         "optional": [
@@ -9,15 +9,20 @@ System.config({
         ],
         "stage": 1
     },
-    // typescriptOptions: {
-    //     "target": "es5",
-    //     "module": "system",
-    //     "emitDecoratorMetadata": true,
-    //     "experimentalDecorators": true
-    // },
+    typescriptOptions: {
+        "target": "es5",
+        "module": "system",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
     paths: {
         "github:*": "../jspm_packages/github/*",
         "npm:*": "../jspm_packages/npm/*"
+    },
+    packages: {
+        'app': {
+            defaultExtension: 'ts'
+        }
     },
     map: {
         "angular": "github:angular/bower-angular@1.5.3",

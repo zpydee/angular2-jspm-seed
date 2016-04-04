@@ -1,0 +1,5 @@
+{
+    "files": [
+        "./app/**/*.{html,htm,css,js,ts}"
+    ]
+}
