@@ -29,12 +29,10 @@ module.exports = function(config) {
 
         jspm: {
             serveFiles: [
-                'app/app.js',
-                'app/Apple.js'
+                'app/*.js'
             ],
             loadFiles: [
-                'app/app.spec.js',
-                'app/Apple.spec.js'
+                'app/*.spec.js'
             ],
             stripExtension: false
         },
@@ -67,7 +65,7 @@ module.exports = function(config) {
 
         // level of logging
         // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_WARN,
 
 
         // enable / disable watching file and executing tests whenever any file changes
