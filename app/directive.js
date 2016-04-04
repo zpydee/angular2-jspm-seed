@@ -4,7 +4,7 @@ angular.module('directive', [])
     .directive('appDrct', function() {
         return {
             restrict: 'E',
-            templateUrl: 'directive.html',
+            templateUrl: 'app/directive.html',
             controller: 'Controller'
         }
     })

@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "",
+  baseURL: "/app",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
@@ -10,8 +10,8 @@ System.config({
     "stage": 1
   },
   paths: {
-    "github:*": "../jspm_packages/github/*",
-    "npm:*": "../jspm_packages/npm/*"
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
   },
 
   map: {

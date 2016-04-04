@@ -24,18 +24,19 @@ module.exports = function(config) {
         ],
         
         proxies: {
+            "/jspm_packages": "/base/jspm_packages"
         },
 
         jspm: {
-            // config: 'system.conf.js',
-            // packages: 'bower_components/system.js/dist',
             serveFiles: [
-                '*.js'
+                'app/app.js',
+                'app/Apple.js'
             ],
             loadFiles: [
-                '*.spec.js'
+                'app/app.spec.js',
+                'app/Apple.spec.js'
             ],
-            // stripExtension: false
+            stripExtension: false
         },
 
 
@@ -53,7 +54,7 @@ module.exports = function(config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['spec', 'coverage'],
+        reporters: ['spec'],
 
 
         // web server port

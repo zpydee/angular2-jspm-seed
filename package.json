@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server",
+    "start": "lite-server --server app",
     "test": "karma start karma.conf.js"
   },
   "author": "zpydee <daveb@interactrdt.com>",
@@ -22,6 +22,10 @@
   },
   "dependencies": {},
   "jspm": {
+    "directories": {
+      "baseURL": "app",
+      "packages": "jspm_packages"
+    },
     "configFile": "system.conf.js",
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.5.3"

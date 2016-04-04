@@ -1,7 +1,7 @@
 import angular from 'angular';
 
-import {Service}from 'service.js';
-import Apple from 'Apple.js';
+import {Service}from './service.js';
+import Apple from './Apple.js';
 
 angular.module('service', [])
 .service('Service', Service)
