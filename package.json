@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+      "postinstall": "jspm install && typings install",
     "start": "lite-server --server app",
     "test": "karma start karma.conf.js"
   },

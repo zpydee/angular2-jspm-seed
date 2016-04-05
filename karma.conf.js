@@ -31,10 +31,10 @@ module.exports = function(config) {
 
         jspm: {
             serveFiles: [
-                'app/*.ts'
+                'app/**/*.ts'
             ],
             loadFiles: [
-                'app/*.spec.ts'
+                'app/**/*.spec.ts'
             ],
             stripExtension: false
         },
