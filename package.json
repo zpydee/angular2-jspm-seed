@@ -1,10 +1,14 @@
 {
   "name": "systemjs-experiments",
   "version": "0.1.1",
-  "description": "",
+  "description": "a seed project including jspm, systemjs, angular2 and karma",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
-      "postinstall": "jspm install && typings install",
+    "postinstall": "npm run jspm_i",
+    "jspm_i": "jspm install",
+    "postjspm_i": "npm run typings_i",
+    "typings_i": "typings install",
     "start": "lite-server --server app",
     "test": "karma start karma.conf.js"
   },

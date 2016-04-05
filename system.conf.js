@@ -4,16 +4,16 @@ System.config({
   transpiler: "typescript",
   typescriptOptions: {
     "compilerOptions": {
-        "target": "es5", 
-        "module": "system",
-        "moduleResolution": "node",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "noImplicitAny": false
+      "target": "es5",
+      "module": "system",
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "noImplicitAny": false
     },
     "exclude": [
-        "jspm_packages",
-        "node_modules"
+      "jspm_packages",
+      "node_modules"
     ],
     "compileOnSave": false
   },
