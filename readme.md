@@ -30,6 +30,10 @@ NOTE: The only test that's been included doesn't actually test
 anything real since its inclusion is just to show how to get tests
 running, not to actually test anything substantive.
 
+## Known Issues
+The YUML capability (in `/utils`) doesn't currently work so I' rather going to discuss it
+when I have it working with the larger deendency tree caused by the inclusion
+of Angular 2. If anyone want to resolve this before I get a chance, please submit a pull-request.
 ## Acknowledgements
 - [Pluralsight's course](https://app.pluralsight.com/library/courses/javascript-systemjs-jspm/table-of-contents) on systemjs and jspm by Wes Higbee which guided the karma setup.
 - [Mario Brendel's blog](http://www.mario-brendel.com/angular2-setup/2016/01/28/Angular2_Jspm_Setup_Part1/),
