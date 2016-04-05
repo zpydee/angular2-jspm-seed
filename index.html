@@ -1,17 +1,16 @@
 <html>
 
 <head>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.min.js"></script>
     <script src="jspm_packages/system.js"></script>
     <script src="system.conf.js"></script>
-    <script src="system.yuml.js"></script>
+    <script src="utils/system.yuml.js"></script>
 </head>
-
 <body>
-    <h1>Hello World</h1>
-
+    <app></app>
     <script>
-        
-        System.import("app/app.ts");
+        System.import("app").then(
+            null, console.error.bind(console));
     </script>
 
 </body>

@@ -1,12 +1,18 @@
 export class Pong {
-    
+
     x: string;
-    
-    constructor(){
+
+    constructor() {
         this.x = 'piiiopning'
+    }
+
+    sayX() {
+        document.title = "Success";
+        console.log(this.x)
     }
 }
 
+
 let pong = new Pong();
 
-console.log(pong.x);
+pong.sayX();

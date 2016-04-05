@@ -24,6 +24,7 @@ module.exports = function(config) {
         ],
         
         proxies: {
+            "/tsconfig.json": "/base/tsconfig.json",
             "/jspm_packages": "/base/jspm_packages",
             "/app": "/base/app"
         },
@@ -80,7 +81,7 @@ module.exports = function(config) {
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits
-        singleRun: true,
+        singleRun: false,
 
         // Concurrency level
         // how many browser should be started simultaneous
