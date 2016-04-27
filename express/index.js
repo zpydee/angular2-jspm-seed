@@ -1,13 +1,13 @@
 var path = require('path');
 var express = require('express');
-var middleware = require('./config/middleware');
+var staticPaths = require('./config/static-paths');
 var routes = require('./config/routes');
 
 var app = express();
 var port = 3283;
 var rootPath = path.normalize(__dirname + '/..');
 
-middleware.init(app, rootPath);
+staticPaths.init(app, rootPath);
 routes.init(app);
 
 app.listen(port, (err) => {
