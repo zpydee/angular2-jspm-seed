@@ -1,0 +1,14 @@
+<h3>All Widgets</h3>
+<ul class="widgets">
+    <li *ngFor="#widget of widgets"
+    (click)="onSelect(widget)"
+    [class.selected] = "widget === selectedWidget">
+        <span class="badge">{{widget.id}}</span> {{widget.name}}
+    </li>
+</ul>
+<div *ngIf="selectedWidget">
+    <h4>
+        {{selectedWidget.name | uppercase}} selected
+    </h4>
+    <button (click)="gotoWidgetDetail()">View Details</button>
+</div>
