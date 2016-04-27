@@ -3,19 +3,19 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "typescript",
   typescriptOptions: {
-    "compilerOptions": {
+    // "compilerOptions": {
       "target": "es5",
       "module": "system",
       "moduleResolution": "node",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "noImplicitAny": false
-    },
-    "exclude": [
-      "jspm_packages",
-      "node_modules"
-    ],
-    "compileOnSave": false
+    // },
+    // "exclude": [
+    //   "jspm_packages",
+    //   "node_modules"
+    // ],
+    // "compileOnSave": false
   },
   paths: {
     "github:*": "../jspm_packages/github/*",
