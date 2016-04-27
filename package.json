@@ -9,11 +9,8 @@
     "install:jspm": "jspm install",
     "postinstall:jspm": "npm run install:typings",
     "install:typings": "typings install",
-    "start": "npm run start:express",
-    "start:express": "node index.js",
-    "start:lite": "lite-server --server app",
-    "test": "npm run test:client",
-    "test:client": "karma start karma.conf.js"
+    "start": "lite-server --server app",
+    "test": "karma start karma.conf.js"
   },
   "author": "zpydee <daveb@interactrdt.com>",
   "devDependencies": {
@@ -31,8 +28,6 @@
     "angular2": "^2.0.0-beta.13",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
-    "express": "^4.13.4",
-    "path": "^0.12.7",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
     "zone.js": "0.5.10"
