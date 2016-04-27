@@ -2,13 +2,13 @@ import { Component, Inject, OnInit } from 'angular2/core';
 import {Router} from 'angular2/router';
 
 import {Widget} from './widget';
-import {WidgetDetailComponent} from './widget-detail.component';
-import {WidgetService} from './widget.service';
+import {WidgetDetailComponent} from './widget-detail-component';
+import {WidgetService} from './widget-service';
 
 @Component({
     selector: 'widget-list',
-    templateUrl: 'app/widgets/widget-list.component.html',
-    styleUrls: ['app/widgets/widget-list.component.css'],
+    templateUrl: 'app/widgets/widget-list-component.html',
+    styleUrls: ['app/widgets/widget-list-component.css'],
     directives: [WidgetDetailComponent]
 })
 export class WidgetListComponent implements OnInit {

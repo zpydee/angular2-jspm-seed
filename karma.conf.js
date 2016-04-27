@@ -23,7 +23,7 @@ module.exports = function(config) {
                 'app/**/*.ts'
             ],
             loadFiles: [
-                'app/**/*.spec.ts'
+                'app/**/*_spec.ts'
             ],
             stripExtension: false
         },

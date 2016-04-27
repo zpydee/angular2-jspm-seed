@@ -1,8 +1,8 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, RouterOutlet} from 'angular2/router';
-import {WidgetListComponent} from './widget-list.component';
-import {WidgetDetailComponent} from './widget-detail.component';
-import {WidgetService} from './widget.service';
+import {WidgetListComponent} from './widget-list-component';
+import {WidgetDetailComponent} from './widget-detail-component';
+import {WidgetService} from './widget-service';
 
 @Component({
     template: `<router-outlet></router-outlet>`,

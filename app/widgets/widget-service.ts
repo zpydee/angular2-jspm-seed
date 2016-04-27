@@ -1,5 +1,5 @@
 import {Injectable} from 'angular2/core';
-import {widgetMock} from './widget.mock';
+import {widgetMock} from './widget_mock';
 
 @Injectable()
 export class WidgetService {

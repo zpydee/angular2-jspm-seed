@@ -2,12 +2,12 @@ import {Component, Input, Inject, OnInit} from 'angular2/core';
 import {Router, RouteParams} from 'angular2/router';
 
 import {Widget} from './widget';
-import {WidgetService} from './widget.service';
+import {WidgetService} from './widget-service';
 
 
 @Component({
     selector: 'widget-detail',
-    templateUrl: 'app/widgets/widget-detail.component.html',
+    templateUrl: 'app/widgets/widget-detail-component.html',
 })
 export class WidgetDetailComponent implements OnInit {
     constructor(
