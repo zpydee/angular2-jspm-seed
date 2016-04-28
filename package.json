@@ -2,6 +2,10 @@
   "name": "systemjs-experiments",
   "version": "0.1.1",
   "description": "a seed project including jspm, systemjs, angular2 and karma",
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/zpydee/angular2-jspm-seed"
+  },
   "license": "ISC",
   "main": "index.js",
   "scripts": {
