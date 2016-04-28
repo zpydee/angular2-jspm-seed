@@ -3,7 +3,7 @@
 - `systemjs` and `jspm`
 - `angular 2`, and
 - `karma` as a test runner
-- 'wallaby' for an integraged testing experience
+- `wallaby` for an integrated testing experience
 
 `ja2k-seed` uses the `typescript` language.
 
