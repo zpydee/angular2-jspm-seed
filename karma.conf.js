@@ -32,12 +32,12 @@ module.exports = function (config) {
         ],
         preprocessors: {
         },
+        browsers: ['Chrome'],
         reporters: ['progress'],
         port: 9876,
+        logLevel: config.LOG_ERROR,
         colors: true,
-        logLevel: config.LOG_WARN,
         autoWatch: true,
-        browsers: ['Chrome'],
         singleRun: false,
         concurrency: Infinity
     })
