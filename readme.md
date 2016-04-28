@@ -2,7 +2,7 @@
 'ja2k-seed' is a little boilerplate that set up a project incorporating:
 - `systemjs` and `jspm`
 - `angular 2`, and
-- `karma` as a test runner
+- `karma` as a test runner (implementation of `wallaby` underway too)
 
 `ja2k-seed` uses the `typescript` language.
 
