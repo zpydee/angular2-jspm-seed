@@ -2,10 +2,9 @@ module.exports = function (wallaby) {
 
     return {
         files: [
-            { pattern: 'node_modules/phantomjs-polyfill/bind-polyfill.js', instrument: false },
-            { pattern: 'node_modules/es6-shim/es6-shim.js', instrument: false },
+            { pattern: 'node_modules/core-js/client/shim.js', instrument: false },
+            { pattern: 'node_modules/angular2/bundles/angular2-polyfills.js', instrument: false },
             { pattern: 'jspm_packages/system.js', instrument: false },
-            { pattern: 'node_modules/reflect-metadata/Reflect.js', instrument: false },
             { pattern: 'system.conf.js', instrument: false },
             { pattern: 'app/**/*.ts', load: false },
             { pattern: 'app/**/*.html', load: false },
@@ -18,9 +17,11 @@ module.exports = function (wallaby) {
 
         compilers: {
             '**/*.ts': wallaby.compilers.typeScript({
+                target: 'es5',
+                module: 'system',
+                moduleResolution: 'node',
                 emitDecoratorMetadata: true,
-                experimentalDecorators: true,
-                module: 4
+                experimentalDecorators: true
             })
         },
 
@@ -34,6 +35,7 @@ module.exports = function (wallaby) {
             wallaby.delayStart();
 
             System.config({
+                transpiler: 'none',
                 packages: {
                     'app': {
                         defaultExtension: 'js'
@@ -57,7 +59,7 @@ module.exports = function (wallaby) {
 
             Promise.all(promises).then(function () {
                 wallaby.start();
-            });
+            }).catch(function (e) { setTimeout(function (){ throw e; }, 0); });
         }
     };
 };
