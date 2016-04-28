@@ -1,0 +1,10 @@
+
+// options in here for vscode (or other IDE) only.
+// actual typescript options in ./system.conf.js
+
+{
+    "compilerOptions": {
+      "experimentalDecorators": true
+  },
+    "compileOnSave": false
+  }

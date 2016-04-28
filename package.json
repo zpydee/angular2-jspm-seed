@@ -5,15 +5,14 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run jspm_i",
-    "jspm_i": "jspm install",
-    "postjspm_i": "npm run typings_i",
-    "typings_i": "typings install",
+    "postinstall": "npm run install:jspm",
+    "install:jspm": "jspm install",
+    "postinstall:jspm": "npm run install:typings",
+    "install:typings": "typings install",
     "start": "lite-server --server app",
     "test": "karma start karma.conf.js"
   },
   "author": "zpydee <daveb@interactrdt.com>",
-  "license": "ISC",
   "devDependencies": {
     "jasmine-core": "^2.4.1",
     "jspm": "^0.16.32",
@@ -23,6 +22,7 @@
     "karma-jspm": "^2.1.0",
     "karma-spec-reporter": "0.0.25",
     "lite-server": "^2.1.0",
+    "tslint": "^3.8.1",
     "typings": "^0.7.12"
   },
   "dependencies": {

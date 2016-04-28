@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Wed Mar 30 2016 13:59:14 GMT+0200 (SAST)
 
-module.exports = function(config) {
+module.exports = function (config) {
     config.set({
 
         basePath: '',
@@ -12,6 +12,7 @@ module.exports = function(config) {
         //     'karma-jasmine'
         // ],
         files: [
+            "node_modules/angular2/bundles/angular2-polyfills.min.js"
         ],
         proxies: {
             "/tsconfig.json": "/base/tsconfig.json",
@@ -23,7 +24,7 @@ module.exports = function(config) {
                 'app/**/*.ts'
             ],
             loadFiles: [
-                'app/**/*.spec.ts'
+                'app/**/*_spec.ts'
             ],
             stripExtension: false
         },
@@ -31,12 +32,12 @@ module.exports = function(config) {
         ],
         preprocessors: {
         },
-        reporters: ['spec'],
-        port: 9876,
-        colors: true,
-        logLevel: config.LOG_WARN,
-        autoWatch: true,
         browsers: ['Chrome'],
+        reporters: ['progress'],
+        port: 9876,
+        logLevel: config.LOG_ERROR,
+        colors: true,
+        autoWatch: true,
         singleRun: false,
         concurrency: Infinity
     })

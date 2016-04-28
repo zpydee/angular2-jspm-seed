@@ -1,18 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>a2</title>
+
+    <base href="/">
+
     <script src="node_modules/angular2/bundles/angular2-polyfills.min.js"></script>
     <script src="jspm_packages/system.js"></script>
     <script src="system.conf.js"></script>
     <script src="utils/system.yuml.js"></script>
-</head>
-<body>
-    <app></app>
+
     <script>
         System.import("app").then(
             null, console.error.bind(console));
     </script>
+</head>
 
+<body>
+    <app>Loading...</app>
 </body>
 
 </html>

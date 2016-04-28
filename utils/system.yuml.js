@@ -39,6 +39,8 @@ window.mods = function() {
         });
 
     var definitions = moduleDefinitions.concat(dependencyDefinitions);
+    
+    console.log(definitions);
 
     window.open("http://yuml.me/diagram/plain/class/" + definitions);
 };
